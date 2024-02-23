@@ -25,3 +25,12 @@ PSR Router and Container implementations </p>
     <li><code>Session.php</code>: A wrapper class around the $_SESSION super-global.</li>
     <li><code>View.php</code>: It is a primitive templating engine that allows me to render views and inject custom params in them.</li>
 </ul>
+
+
+<h2 id="file-structure">Roles</h2>
+
+<ul>
+    <li><code>Admin</code>: Can See/Edit/delete all users ( can only be created through first time registration )</li>
+    <li><code>Editor/Author</code>: Can see all users but only authorized to edit/delete his account (deleting results in logging out)</li>
+    <li><code>Guest</code>: Can only see his account/edit/delete it</li>
+</ul>
